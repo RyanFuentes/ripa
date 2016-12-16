@@ -15,7 +15,10 @@ const onLoad = (scope) => {
 
     const newParams = Object.assign(params, { view });
     history
-      .pushState(history.state, '', `${url[0]}?${qs.stringify(newParams)}`);
+      .pushState(
+        history.state,
+        '',
+        `${url[0]}?${qs.stringify(newParams, { arrayFormat: 'brackets' })}`);
   }
 };
 
@@ -28,7 +31,10 @@ const onClick = (k, scope, onChange) => () => {
 
     const newParams = Object.assign(params, { view: k });
     history
-      .pushState(history.state, '', `${url[0]}?${qs.stringify(newParams)}`);
+      .pushState(
+        history.state,
+        '',
+        `${url[0]}?${qs.stringify(newParams, { arrayFormat: 'brackets' })}`);
     onChange(k);
   }
 };
