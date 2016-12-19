@@ -115,7 +115,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var params = _qs2.default.parse(url[1]);
 
 	    var newParams = (0, _assign2.default)(params, { view: view });
-	    history.pushState(history.state, '', url[0] + '?' + _qs2.default.stringify(newParams));
+	    history.pushState(history.state, '', url[0] + '?' + _qs2.default.stringify(newParams, { arrayFormat: 'brackets' }));
 	  }
 	};
 
@@ -128,7 +128,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      localStorage.setItem(scope + '/VIEW', k);
 
 	      var newParams = (0, _assign2.default)(params, { view: k });
-	      history.pushState(history.state, '', url[0] + '?' + _qs2.default.stringify(newParams));
+	      history.pushState(history.state, '', url[0] + '?' + _qs2.default.stringify(newParams, { arrayFormat: 'brackets' }));
 	      onChange(k);
 	    }
 	  };
