@@ -127,7 +127,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    if (params.view !== k) {
 	      localStorage.setItem(scope + '/VIEW', k);
 
-	      var newParams = (0, _assign2.default)(params, { view: k });
+	      var newParams = (0, _assign2.default)(params, { view: k, page: 1 });
 	      history.pushState(history.state, '', url[0] + '?' + _qs2.default.stringify(newParams, { arrayFormat: 'brackets' }));
 	      onChange(k);
 	    }
@@ -1318,7 +1318,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, ".Ripa__container___2i1AY {\n  border-bottom: 1px solid #c3c2c2;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-direction: row;\n      flex-direction: row;\n  -ms-flex-pack: start;\n      justify-content: flex-start;\n  padding-bottom: 10px; }\n  .Ripa__container___2i1AY > * {\n    margin-right: 35px;\n    display: -ms-flexbox;\n    display: flex; }\n\n.Ripa__tab___7G2nT {\n  background-color: #ffffff !important;\n  border-bottom: 2px solid #ffffff !important;\n  border-color: #ffffff !important;\n  color: #676767 !important;\n  cursor: pointer;\n  font-size: 12px !important;\n  padding: 0 !important; }\n  .Ripa__tab___7G2nT:hover {\n    border-bottom: 2px solid #e7e7e7 !important; }\n\n.Ripa__active___5EnHE,\n.Ripa__active___5EnHE:hover {\n  border-bottom: 2px solid #676767 !important;\n  cursor: default;\n  font-weight: bold; }\n\n.Ripa__tab___7G2nT:focus {\n  outline: none; }\n", ""]);
+	exports.push([module.id, ".Ripa__container___2i1AY {\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-direction: row;\n      flex-direction: row;\n  -ms-flex-pack: start;\n      justify-content: flex-start;\n  padding-bottom: 10px; }\n  .Ripa__container___2i1AY > * {\n    margin-right: 35px;\n    display: -ms-flexbox;\n    display: flex; }\n\n.Ripa__tab___7G2nT {\n  background-color: #ffffff !important;\n  border-bottom: 2px solid #ffffff !important;\n  border-color: #ffffff !important;\n  color: #676767 !important;\n  cursor: pointer;\n  font-size: 12px !important;\n  padding: 0 !important; }\n  .Ripa__tab___7G2nT:hover {\n    border-bottom: 2px solid #e7e7e7 !important; }\n\n.Ripa__active___5EnHE,\n.Ripa__active___5EnHE:hover {\n  border-bottom: 2px solid #676767 !important;\n  cursor: default;\n  font-weight: bold; }\n\n.Ripa__tab___7G2nT:focus {\n  outline: none; }\n", ""]);
 
 	// exports
 	exports.locals = {

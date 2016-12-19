@@ -29,7 +29,7 @@ const onClick = (k, scope, onChange) => () => {
   if (params.view !== k) {
     localStorage.setItem(`${scope}/VIEW`, k);
 
-    const newParams = Object.assign(params, { view: k });
+    const newParams = Object.assign(params, { view: k, page: 1 });
     history
       .pushState(
         history.state,
