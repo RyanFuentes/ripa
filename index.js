@@ -127,7 +127,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    if (params.view !== k) {
 	      localStorage.setItem(scope + '/VIEW', k);
 
-	      var newParams = (0, _assign2.default)(params, { view: k, page: 1 });
+	      var newParams = (0, _assign2.default)(params, { view: k, page: 1, search: '' });
 	      history.pushState(history.state, '', url[0] + '?' + _qs2.default.stringify(newParams, { arrayFormat: 'brackets' }));
 	      onChange(k);
 	    }
