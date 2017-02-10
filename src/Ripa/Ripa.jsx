@@ -22,7 +22,7 @@ class Ripa extends React.Component {
     }
   }
 
-  _onClickButton = (k, v, index) => () => {
+  _onClickButton = ({k, v, index}) => () => {
     this.setSelected({k, v, index});
   };
 
@@ -38,7 +38,7 @@ class Ripa extends React.Component {
       <button
         className={`${styles.tab} ${selectedIndex === index ? styles.active : null}`}
         key={`${k}-tab`}
-        onClick={this._onClickButton(k, v, index)}
+        onClick={this._onClickButton({k, v, index})}
       >
         {v}
       </button>
