@@ -16,24 +16,22 @@
 // specificity in _buttons.scss, so the !importants are necessary -CR 10042016
 .tab {
   background-color: palette(white) !important;
+  border: 1px solid #676767;
   border-bottom: 2px solid palette(white) !important;
   border-color: palette(white) !important;
+  border-radius: 2px;
+  box-sizing: border-box;
   color: palette(gray, xdark) !important;
   cursor: pointer;
-  font-size: 12px !important;
-  padding: 0 !important;
   display: inline-block;
-  border: 1px solid #676767;
-  box-sizing: border-box;
+  font-size: 12px !important;
   line-height: 28px;
-  text-decoration: none !important;
-  background: none;
-  white-space: nowrap;
-  border-radius: 2px;
-  vertical-align: middle;
+  padding: 0 !important;
   text-align: center;
-  cursor: pointer;
-  
+  text-decoration: none !important;
+  vertical-align: middle;
+  white-space: nowrap;
+
   &:hover {
     border-bottom: 2px solid palette(gray, light) !important;
   }
