@@ -1,4 +1,4 @@
-@import "./_variables";
+@import "../../_variables";
 
 .container {
   display: flex;
@@ -22,7 +22,18 @@
   cursor: pointer;
   font-size: 12px !important;
   padding: 0 !important;
-
+  display: inline-block;
+  border: 1px solid #676767;
+  box-sizing: border-box;
+  line-height: 28px;
+  text-decoration: none !important;
+  background: none;
+  white-space: nowrap;
+  border-radius: 2px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  
   &:hover {
     border-bottom: 2px solid palette(gray, light) !important;
   }
