@@ -3,14 +3,14 @@ import styles from './styles/default.scss';
 
 class Ripa extends React.Component {
 
-  constructor(props) {
-    super(props);
+  componentWillMount() {
     if (
-      props.hasOwnProperty('initialSelectedIndex') &&
-      props.hasOwnProperty('initialSelectedKey')
+      this.props.hasOwnProperty('initialSelectedIndex') &&
+      this.props.hasOwnProperty('initialSelectedKey')
     ) { console.warn('Both initialSelectedIndex and initialSelectedKey were supplied. Using initialSelectedIndex.'); }
 
-    const selectedIndex = props.initialSelectedIndex || props.labels.findIndex(l => l.k === props.initialSelectedKey);
+    const { initialSelectedKey, initialSelectedIndex, labels } = this.props;
+    const selectedIndex = initialSelectedIndex || labels.findIndex(l => l.k === initialSelectedKey);
     this.state = { selectedIndex };
   }
 

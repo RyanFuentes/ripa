@@ -41,7 +41,7 @@ const onRipaChange = (scope, handler) => (k, v, index) => {
   if (params.view !== k) {
     localStorage.setItem(`${scope}/VIEW`, k);
 
-    const newParams = Object.assign(params, { view: k, page: 1, search: '' });
+    const newParams = Object.assign(params, { view: k });
     history
       .pushState(
         history.state,
